@@ -1,0 +1,48 @@
+/* ===== ICONS — self-hosted Boxicons subset =====
+   Only the glyphs this site actually uses (16 of 1,638), so the font is
+   1.9 KB instead of 113 KB and loads from our own server. Nothing here
+   depends on a CDN, so the icons cannot change or vanish on their own.
+
+   To add an icon: find its class in the Boxicons cheatsheet, then re-run
+   the subset with the new codepoint included — adding a class here alone
+   will not work, because the glyph must also be in the font file.
+   ===================================================================== */
+
+@font-face {
+  font-family: boxicons;
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  src: url('../fonts/boxicons-subset.woff2') format('woff2');
+}
+
+.bx {
+  font-family: boxicons !important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bx-right-arrow-alt:before { content: "\ebe6"; }
+.bx-down-arrow-alt:before { content: "\eab7"; }
+.bx-been-here:before { content: "\e9d0"; }
+/* .bx-bookmark-star — not a real Boxicons class, see README */
+.bxs-bookmark-star:before { content: "\ece4"; }
+.bx-envelope:before { content: "\eac1"; }
+.bx-globe:before { content: "\eaf8"; }
+.bx-info-circle:before { content: "\eb21"; }
+.bx-map:before { content: "\eb56"; }
+.bx-phone:before { content: "\ebb2"; }
+.bx-search:before { content: "\ebf7"; }
+.bx-time-five:before { content: "\ec46"; }
+.bx-x:before { content: "\ec8d"; }
+.bxs-star:before { content: "\eeb8"; }
+.bxl-facebook:before { content: "\e92f"; }
+.bxl-instagram:before { content: "\e942"; }
